@@ -1,0 +1,5 @@
+name: AntiProfanityPro
+main: net.angusbeefgaming.antiprofpro.AntiProfPro
+version: 1.0
+author: Atticus Zambrana
+commands:
