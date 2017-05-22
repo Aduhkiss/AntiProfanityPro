@@ -31,6 +31,7 @@ public class onCurseWord implements Listener {
                     Player player = event.getPlayer();
                     Bukkit.getServer().dispatchCommand(Bukkit.getServer().getConsoleSender(), "mute " + player.getName() + " 1h Auto-Muted for 1 Hour by APP Reason: Do NOT Curse on our Server!");
                     player.sendMessage(ChatColor.GOLD + "You Have been caught using Profanity, and have automaticly been muted by APP!");
+                    event.setCancelled(true);
                     return;
             	}
             }
