@@ -21,7 +21,7 @@ public class onCurseWord implements Listener {
     @EventHandler
     public void onChat(AsyncPlayerChatEvent event) {
     	// Here is the list for banned words
-    	List<String> bannedWords = Arrays.asList("fuck", "cunt", "bitch", "nigger", "nigga", "<=3", "dick", "cock", "ass", "asshole", "penis", "pussy", "shit", "fag", "faggot", "bastard", "slut");
+    	List<String> bannedWords = Arrays.asList("fuck", "cunt", "bitch", "nigger", "nigga", "<=3", "dick", "cock", "ass", "asshole", "penis", "pussy", "shit", "fag", "fag", "bastard", "slut");
         for (String cens: bannedWords) {
             if (event.getMessage().contains(cens)) {
             	if(event.getPlayer().hasPermission("angusbeef.app-bypass")) {
